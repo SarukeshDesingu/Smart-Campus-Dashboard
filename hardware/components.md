@@ -1,26 +1,40 @@
 # Hardware Components
 
-## Project
-Smart Campus Dashboard — ESP32-Based Monitoring and Protection System
+## 1. Overview
 
-## Main Components
+The Smart Campus Dashboard uses an ESP32 microcontroller with sensors and output devices to monitor electrical parameters and, where implemented, environmental conditions.
 
-| No. | Component | Purpose |
+## 2. Components and Their Functions
+
+| S. No. | Component | Function |
 |---|---|---|
-| 1 | ESP32 development board | Reads sensors and processes data |
-| 2 | ZMPT101B voltage sensor | Measures AC voltage through an appropriate isolated sensing module |
-| 3 | ACS712 current sensor | Measures current within its supported range |
-| 4 | Relay module | Switches a connected load when commanded |
-| 5 | DHT22 temperature and humidity sensor | Monitors environmental conditions, if included |
-| 6 | MQ-2 gas sensor | Detects certain combustible gases and smoke, if included |
-| 7 | HC-SR04 ultrasonic sensor | Measures distance, for example, tank level, if included |
-| 8 | Buzzer | Provides an audible alert, if included |
-| 9 | LEDs | Indicate operating or alert status, if included |
-| 10 | Jumper wires and breadboard | Connect low-voltage prototype components |
-| 11 | Power supply | Powers the ESP32 and compatible modules |
+| 1 | ESP32 Development Board | Processes sensor readings and communicates with the dashboard |
+| 2 | ZMPT101B Voltage Sensor | Senses AC voltage |
+| 3 | ACS712 Current Sensor | Senses electrical current |
+| 4 | Relay Module | Switches a connected load according to the program |
+| 5 | DHT22 Sensor | Measures temperature and humidity, if used |
+| 6 | MQ-2 Gas Sensor | Detects certain gases and smoke, if used |
+| 7 | HC-SR04 Ultrasonic Sensor | Measures distance or water level, if used |
+| 8 | Buzzer | Provides an audible alert, if used |
+| 9 | LED Indicators | Indicate status or alerts, if used |
+| 10 | Jumper Wires | Connect low-voltage circuit components |
+| 11 | Power Supply | Supplies power to the electronic components |
 
-## Notes
-- Verify each sensor's operating voltage and output range before connecting it to the ESP32.
-- ESP32 GPIO inputs are not 5 V tolerant.
-- Do not connect mains voltage directly to the ESP32 or a breadboard.
-- Use appropriate isolation, fusing, enclosures, and qualified supervision for mains-related testing.
+## 3. Main Controller
+
+The ESP32 is the main controller of the system. It reads data from connected sensors, processes the readings, and communicates with the dashboard when network connectivity is configured.
+
+## 4. Output Devices
+
+The relay, buzzer, and LEDs provide output functions where included in the prototype. Their operation depends on the firmware and configured conditions.
+
+## 5. Design and Simulation
+
+The circuit design is documented using Proteus simulation images. Refer to `Proteus-Circuit.png` for the circuit layout.
+
+## 6. Safety Precautions
+
+- Never connect mains voltage directly to ESP32 GPIO pins.
+- Check sensor output voltages before connecting them to the ESP32.
+- Use appropriate isolation, fuses, enclosures, and protective equipment for mains-related circuits.
+- Test relay operation with a safe low-voltage setup before use.

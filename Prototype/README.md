@@ -22,4 +22,8 @@ The hardware should be checked for correct sensor connections, stable power supp
 
 ## 5. Project Status
 
-Add the current prototype status, such as assembled, completed and demonstrated.
+**Status: Completed — Developed and Tested**
+
+The Smart Campus Dashboard has been successfully developed and tested as a working prototype. The project integrates the ESP32 with electrical and environmental sensors to collect and process measurements and present the readings through a dashboard.
+
+The implemented system also supports abnormal-condition detection, alert generation, and relay-based control according to the configured protection logic. Development and testing provided practical experience in embedded programming, sensor interfacing, system integration, and electrical monitoring.

@@ -1,3 +1,4 @@
+
 # Hardware Components
 
 ## 1. Overview
@@ -28,9 +29,16 @@ The ESP32 is the main controller of the system. It reads data from connected sen
 
 The relay, buzzer, and LEDs provide output functions where included in the prototype. Their operation depends on the firmware and configured conditions.
 
-## 5. Design and Simulation
+## 5. Circuit Diagram and Hardware Components
 
-The circuit design is documented using Proteus simulation images. Refer to `Proteus-Circuit.png` for the circuit layout.
+The following image shows the circuit design and hardware components used in the Smart Campus Dashboard project.
+
+<img width="1536" height="1024" alt="circuit components" src="https://github.com/user-attachments/assets/862d350d-1c3f-4ec5-a741-5b968b23aef9" />
+
+
+**Figure 1:** Circuit diagram and hardware components of the Smart Campus Dashboard.
+
+The circuit diagram illustrates the connections between the ESP32 microcontroller, sensors, and output devices. The component view provides a visual reference for the hardware used in the prototype.
 
 ## 6. Safety Precautions
 
